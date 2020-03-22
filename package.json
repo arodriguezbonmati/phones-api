@@ -1,0 +1,27 @@
+{
+  "name": "phones-api",
+  "version": "1.0.0",
+  "description": "Phone Catalogue REST API - GuideSmiths code challenge by Jaime Dordio",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --watch src --exec 'npm run build && node dist/server.js'",
+    "start": "npm run build && node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jaime Dordio",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
