@@ -9,10 +9,7 @@ app.use("/", router);
 const port = process.env.PORT || 3000;
 
 router.get("/phones", (req, res) => {
-  console.log(chalk.blue(`---------------------------------------`));
   console.log(chalk.blue(`REQUEST MADE TO 'phones'`));
-  console.log(chalk.blue(`---------------------------------------`));
-
   res.send({ phones });
 });
 
